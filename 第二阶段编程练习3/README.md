@@ -157,11 +157,11 @@ int main()
 	int ranks[] = {1, 2, 3, 4, 5};
 	bool have_next = true;
 	while (have_next) {
-		bool A = (ranks[1] == 2) + (ranks[0] == 3);
-		bool B = (ranks[1] == 2) + (ranks[4] == 4);
-		bool C = (ranks[2] == 1) + (ranks[3] == 2);
-		bool D = (ranks[2] == 5) + (ranks[3] == 3);
-		bool E = (ranks[4] == 4) + (ranks[0] == 1);
+		int A = (ranks[1] == 2) + (ranks[0] == 3);
+		int B = (ranks[1] == 2) + (ranks[4] == 4);
+		int C = (ranks[2] == 1) + (ranks[3] == 2);
+		int D = (ranks[2] == 5) + (ranks[3] == 3);
+		int E = (ranks[4] == 4) + (ranks[0] == 1);
 		int v[] = {A, B, C, D, E};
 		sort(v, v + 5);
 		if (v[0] == 1 && v[4] == 1) {
